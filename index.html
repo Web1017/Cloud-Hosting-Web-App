@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <!-- =========================================================
+        Theme Name: Cloud Hosting Application
+        Github: https://github.com/Web1017/Cloud-Hosting-Web-App
+        Author: Javid Niftaliyev
+        Date: December 2020
+        Logo Credit: Used logos are credit to https://icons8.com/
+         (The logos are not used for any sales)
+       ============================================================ -->
 
     <title>LightFlow | Cloud Hosting Services</title>
 </head>
@@ -20,7 +30,8 @@
     <!--Navbar Section-->
     <div class="navbar">
         <div class="container flex">
-            <h1 class="logo">LightFlow</h1>
+
+            <h1 class="logo fab fa-artstation fa-2x">LightFlow</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -43,7 +54,12 @@
             </div>
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -62,8 +78,44 @@
 
 
 
+    <!--Tools Section-->
+
+    <section class="tools">
+        <div class="container">
+            <h3 class="tools-heading text-center my-1">
+                With LightFlow you are guranteed the most improved and innovated cloud hosting service. With over 4
+                million clients worldwide, we make sure every customer is able to feel the outstanding service that they
+                deserve. We overcome the challenges together and help our clients manage their websites easily.
+
+            </h3>
+            <div class="grid grid-3 text-center my-4">
+                <div><i class="fas fa-user-lock fa-3x"></i>
+                    <h3>Secure Encryption</h3>
+                    <p class="text-secondary">We provide the needed Encryption and make sure the domain has the needed
+                        protection</p>
+                </div>
+
+                <div><i class="fas fa-globe-americas fa-3x"></i>
+                    <h3>Group Collaboration</h3>
+                    <p class="text-secondary">We provide the needed tools to allow easy collaboration between
+                        individuals and groups anywhere in the world</p>
+                </div>
+
+                <div><i class="fas fa-hdd fa-3x"></i>
+                    <h3>Backup Storage</h3>
+                    <p class="text-secondary">You can instantly backup any of your domain information to prevent any
+                        losses in case of an attack or hardware problems</p>
+                </div>
+            </div>
+    </section>
+
+
+    <!--End of Tools Section-->
+
+
+
     <!--Stats Section-->
-    <section class="stats">
+    <!--  <section class="stats">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
                 Our Cloud Hosting Platform provides new innovation of cloud hosting, using the most advanced
@@ -88,7 +140,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     <!--End of Stats Section-->
 
 
@@ -113,7 +165,7 @@
             <div class="text-center">
                 <h2 class="lg">Inovative Cloud Hosting </h2>
                 <p class="lead my-1">Up to 4tb of cloud hosting with easy access and business platform</p>
-                <a href="features.html" class="btn btn-dark">Learn More</a>
+                <a href="features.html" class="btn btn-outline">Learn More</a>
             </div>
             <img src="images/iconfinder_database_1287531.png" alt="">
         </div>
@@ -128,17 +180,24 @@
             Our Supported Languages
         </h2>
         <div class="container flex">
+
+
             <div class="card">
-                <h4>Javascript</h4>
-                <img src="" alt="">
+                <h4>WordPress</h4>
+                <img src="./images/logo/icons8-wordpress-208.png" alt="">
             </div>
             <div class="card">
-                <h4>Java</h4>
-                <img src="" alt="">
+                <h4>PHP</h4>
+                <img src="./images/logo/icons8-php-logo-300.png" alt="">
             </div>
             <div class="card">
-                <h4>Node.js</h4>
-                <img src="" alt="">
+                <h4>Drupal</h4>
+                <img src="./images/logo/icons8-drupal-300.png" alt="">
+            </div>
+
+            <div class="card">
+                <h4>Magento</h4>
+                <img src="./images/logo/icons8-magento-300.png" alt="">
             </div>
         </div>
     </section>
