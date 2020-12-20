@@ -116,7 +116,7 @@ pre {
 }
 
 .showcase-text {
-    animation: slideInFromLeft 1s ease-in;
+    /* animation: slideInFromLeft 1s ease-in; */
 }
 
 .showcase-form {
@@ -127,7 +127,7 @@ pre {
     padding: 40px;
     justify-self: flex-end;
     z-index: 100;
-    animation: slideInFromRight 1s ease-in;
+    /* animation: slideInFromRight 1s ease-in; */
 }
 
 .showcase-form .form-control {
@@ -167,7 +167,7 @@ pre {
 /* Tools Section */
 .tools {
     padding-top: 100px;
-    animation: slideInFromBottom 1s ease-in;
+    /*animation: slideInFromBottom 1s ease-in;*/
 }
 
 .tools-heading {
@@ -175,26 +175,73 @@ pre {
     margin: auto;
 }
 
-
-/* Stats Section */
-.stats {
-    padding-top: 100px;
-    animation: slideInFromBottom 1s ease-in;
+.tools .grid p {
+    margin: .7rem;
 }
 
-.stats-heading {
-    max-width: 500px;
-    margin: auto;
+.tools h1 {
+    font-weight: bolder;
+    padding: 2rem;
 }
 
-.stats .grid h3 {
-    font-size: 35px;
+/* Pricing Section */
+
+.pricing-table {
+    font-family: 'Niramit', sans-serif;
+    height: auto;
+    background: #F6F4F4;
+    margin-bottom: -30px;
+
 }
 
-.stats .grid p {
-    font-size: 20px;
+.pricing-table .pricing-body {
+    border-color: #d0d6da;
+    margin-top: 40px;
+    position: relative;
+    transition: all .2s;
+    float: left;
+    margin-left: 50px;
+    width: 250px;
+    height: 400px;
+
+}
+
+
+.pricing-table .pricing-body:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    transform: translate(0, -3px)
+}
+
+
+.pricing-header {
+    background: #fff;
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+
+.pricing-table .pricing-info {
+    color: #3c4858;
+}
+
+.pricing-info .text-muted {
+    font-size: 22px
+}
+
+.price-stats li {
+    border-bottom: 1px solid #f6f8f9;
+    color: #798388;
+    padding: 12px 10px;
+}
+
+.pricing-body .btn {
     font-weight: bold;
 }
+
+
+
+
 
 /* CLI Section */
 
@@ -209,19 +256,37 @@ pre {
 }
 
 /* Cloud Section */
-.cloud .grid {
-    grid-template-columns: 6fr 2fr;
+.cloud {
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-manuel-geissinger-325229.jpg") repeat no-repeat; */
+    height: 500px;
+
+
+
 }
 
-/* Languages Section */
+
+.cloud h2 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
 
 
-.languages .flex {
+
+.cloud .grid {
+    /*grid-template-columns: 6fr 2fr; */
+
+}
+
+/* Applications Section */
+
+
+.applications .flex {
     flex-wrap: wrap;
 }
 
 
-.languages .card {
+.applications .card {
     text-align: center;
     margin: 18px 10px 40px;
     transition: transform 0.2s ease-in;
@@ -230,17 +295,17 @@ pre {
 
 }
 
-.languages .card img {
+.applications .card img {
     height: 120px;
     width: 120px;
 }
 
-.languages .card h4 {
+.applications .card h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.languages .card :hover {
+.applications .card :hover {
 
     /* transform: translateY(-15px); */
 }
@@ -304,10 +369,21 @@ pre {
 
 .footer {
     background-color: var(--primary-color);
+    /*border-bottom: 1px solid #fff; */
 }
 
 .footer .social a {
     margin: 0 10px;
+
+}
+
+.footer-links {
+    padding: 100px;
+}
+
+.footer-title {
+
+    border-bottom: 1px solid #fff;
 }
 
 
@@ -406,6 +482,31 @@ pre {
     .features-main .grid>*:nth-child(2) {
         grid-column: 1;
     }
+
+    /*Cloud Section */
+    .cloud {
+        height: auto;
+        text-align: center;
+    }
+
+    /* Pricing Table*/
+    .pricing-table {
+        display: flex;
+        height: auto;
+    }
+
+
+    .footer-links {
+
+        font-weight: bolder;
+        margin: 0px -100px;
+
+
+    }
+
+    .footer .social {
+        display: flex;
+    }
 }
 
 
@@ -422,5 +523,11 @@ pre {
     .navbar ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Pricing Table*/
+    .pricing-table {
+        display: flex;
+        height: auto;
     }
 }
