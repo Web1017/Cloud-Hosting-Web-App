@@ -188,20 +188,21 @@ pre {
 .termClose {
     left: 5px;
     background-color: #F45D52;
-    border-color: #E61D0F;
+    border-color: #F45D52;
 
 }
 
 .termMinimize {
     left: 10px;
     background-color: #ECAA46;
-    border-color: #E89821;
+    border-color: #ECAA46;
 }
 
 .termZoom {
     left: 15px;
     background-color: #2A9D8F;
-    border-color: #2d6a4f;
+    border-color: #2A9D8F;
+    ;
 }
 
 
@@ -268,7 +269,7 @@ pre {
 
 /* Tools Section */
 .tools {
-    padding-top: 100px;
+    padding-top: 35px;
     /*animation: slideInFromBottom 1s ease-in;*/
 }
 
@@ -684,9 +685,10 @@ pre {
 
     .termTop {
         height: auto;
-        margin: 50px;
+        margin: 30px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        font-size: small;
     }
 
 
