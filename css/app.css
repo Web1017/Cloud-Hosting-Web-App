@@ -594,7 +594,7 @@ pre {
     /* Pricing Table*/
     .pricing-body {
         float: none;
-        margin-right: 100px;
+        margin-left: 0px;
         width: 100%;
     }
 
@@ -607,7 +607,7 @@ pre {
         font-size: small;
     }
 
-    /* Features (2ND Page) */
+    /* Features (2nd Page) */
 
     .features-main .card {
         width: 350px;
