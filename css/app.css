@@ -116,37 +116,6 @@ pre {
     gap: 30px;
 }
 
-.showcase-text {
-    /* animation: slideInFromLeft 1s ease-in; */
-}
-
-.showcase-form {
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 400px;
-    padding: 40px;
-    justify-self: flex-end;
-    z-index: 100;
-    /* animation: slideInFromRight 1s ease-in; */
-}
-
-.showcase-form .form-control {
-    margin: 30px 0;
-}
-
-.showcase-form input[type='text'],
-.showcase-form input[type='email'] {
-    border: 0;
-    border-bottom: 1px solid #b4becb;
-    width: 100%;
-    padding: 3px;
-    font-size: 16px;
-}
-
-.showcase-form input:focus {
-    outline: none;
-}
 
 .showcase::before,
 .showcase::after {
@@ -157,11 +126,6 @@ pre {
     right: 0;
     left: 0;
     background: #fff;
-    /*transform: skewY(-2deg);
-    -webkit-transform: skewY(-2deg);
-    -moz-transform: skewY(-2deg);
-    -ms-transform: skewY(-2deg); */
-
 
 }
 
@@ -270,7 +234,7 @@ pre {
 /* Tools Section */
 .tools {
     padding-top: 35px;
-    /*animation: slideInFromBottom 1s ease-in;*/
+
 }
 
 .tools-heading {
@@ -344,28 +308,10 @@ pre {
 
 
 
-
-
-/* CLI Section */
-
-.cli .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.cli .grid>*:first-child {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-}
-
 /* Cloud Section */
 .cloud {
-
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-manuel-geissinger-325229.jpg") repeat no-repeat; */
     height: 500px;
-
-
-
 }
 
 
@@ -382,8 +328,6 @@ pre {
 }
 
 /* Applications Section */
-
-
 .applications .flex {
     flex-wrap: wrap;
 }
@@ -408,10 +352,7 @@ pre {
     margin-bottom: 10px;
 }
 
-.applications .card :hover {
 
-    /* transform: translateY(-15px); */
-}
 
 /* Features Section (2nd Page)*/
 .features-head img {
@@ -438,9 +379,6 @@ pre {
     margin: 0;
 
 }
-
-
-
 
 .features-main .grid>*:first-child {
     /* grid-column: 1 / span 3; */
@@ -489,6 +427,11 @@ pre {
 }
 
 
+.warning-alert {
+    background-color: #e9c46a;
+    margin: 20px 0;
+}
+
 
 
 /* Footer Section */
@@ -513,48 +456,6 @@ pre {
 }
 
 
-/*Animations */
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translatey(100%);
-    }
-
-    100% {
-        transform: translatey(0);
-    }
-}
-
 /* Tablets and Under Media Query */
 @media(max-width: 768px) {
 
@@ -573,17 +474,18 @@ pre {
         height: auto;
     }
 
-    .showcase-text {
+    .showcase h1,
+    p {
         text-align: center;
         margin-top: 40px;
-        /*animation: slideInFromTop 1s ease-in; */
+
 
     }
 
     .showcase-form {
         justify-self: center;
         margin: auto;
-        /* animation: slideInFromBottom 1s ease-in; */
+
     }
 
     .cli .grid>*:first-child {
@@ -670,9 +572,19 @@ pre {
         height: auto;
         justify-self: center;
 
+    }
 
+    .showcase h1,
+    p {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase .btn {
+        margin-left: 120px;
 
     }
+
 
 
     /* Pricing Table*/
@@ -682,7 +594,6 @@ pre {
     }
 
     /* Menu Section*/
-
     .termTop {
         height: auto;
         margin: 30px;
