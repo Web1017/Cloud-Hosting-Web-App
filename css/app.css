@@ -568,6 +568,10 @@ pre {
 
     }
 
+    .curs1 {
+        animation: blink 1s infinite;
+    }
+
     .showcase {
         height: auto;
         justify-self: center;
@@ -588,9 +592,10 @@ pre {
 
 
     /* Pricing Table*/
-    .pricing-table {
-        display: flex;
-        height: auto;
+    .pricing-body {
+        float: none;
+        margin-right: 100px;
+        width: 100%;
     }
 
     /* Menu Section*/
@@ -600,6 +605,29 @@ pre {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         font-size: small;
+    }
+
+    /* Features (2ND Page) */
+
+    .features-main .card {
+        width: 350px;
+        margin-left: 30px;
+    }
+
+    .features-main h3,
+    p {
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Documentation (3rd Page) */
+
+    .docs-main {
+        text-align: center;
+    }
+
+    .warning-alert {
+        text-align: center;
     }
 
 
