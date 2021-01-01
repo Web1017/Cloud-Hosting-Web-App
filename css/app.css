@@ -264,10 +264,9 @@ pre {
 .pricing-table .pricing-body {
     border-color: #d0d6da;
     margin-top: 40px;
-    position: relative;
     transition: all .2s;
     float: left;
-    margin-left: 50px;
+    margin: 40px;
     width: 250px;
     height: 400px;
 
@@ -593,8 +592,6 @@ pre {
 
     /* Pricing Table*/
     .pricing-body {
-        float: none;
-        margin-left: 0px;
         width: 100%;
     }
 
